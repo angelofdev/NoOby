@@ -1,11 +1,9 @@
 ## Features:
 ___________________
-	NoOby is a plugin that enables blocks such as Grass, Glowstone, Glass, Ice, 
-	Bookshelves & Snow to drop just like any other block.
+	NoOby is a plugin that enables blocks such as Grass, Glowstone, Glass, Ice, Bookshelves & Snow to drop just like any other block. 
 	NoOby also makes the mining Obsidian difficult with an 80% chance for drops. 
-	This is one way to slow down Obsidian bunkers people make on Factions 
-	enabled servers. To slow down obsidian bunkers and penetrate through obsidian 
-	this plugin is best combined with DynaMight.
+	This is one way to slow down Obsidian bunkers people make on Factions enabled servers. 
+	To effectively make a difference and slow down obsidian bunkers this plugin is best combined with DynaMight.
 
 ##Licence: 
 ___________________
