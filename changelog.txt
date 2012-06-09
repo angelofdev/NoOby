@@ -1,0 +1,10 @@
+0.0.1 Plugin disables Obsidian breaking.
+0.0.2 Added changelog.txt, Enabled breaking & dropping of glass.
+0.0.3 Experiment with Dropping nothing.
+0.0.4 Added Glowstone to drop as itself.
+0.0.5 Added Grass, Glass & Thin Glass to drop as themselves.
+0.0.6 Added Bookshelf, Ice & Snow Blocks to drop as themselves.
+0.1.0 Fixed BlockBreak Exception on Obsidian break. Added smoke & sound effect on obsidian break.
+0.1.1 Updated to 1.2.5 R0.2
+0.2.0 Updated to 1.2.5 R1.4, Enabled Obsidian breaking. Made obsidian vanish randomly.
+0.2.1 Added a custom message when obsidian vanishes.

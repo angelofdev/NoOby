@@ -1,0 +1,7 @@
+name: NoOby
+main: me.angelofdev.NoOby.NoOby
+version: 0.2.1
+description: >
+             Breaks Obsidian like Glass but enables Glass & other blocks to drop.
+commands:
+author: AngelofDev
