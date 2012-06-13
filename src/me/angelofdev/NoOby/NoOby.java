@@ -9,10 +9,6 @@ public class NoOby extends JavaPlugin {
 	private static String version;
 	private static final String PLUGIN_NAME = "NoOby";
 	
-	public NoOby(NoOby paramNoOby, String string, String string2, int i) {
-		// TODO Auto-generated constructor stub
-	}
-
 	@Override
 	public void onDisable() {
 		Log.info(PLUGIN_NAME + " disabled");
