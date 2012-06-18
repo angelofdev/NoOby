@@ -19,10 +19,12 @@ public class NoOby extends JavaPlugin {
 		PluginDescriptionFile pdfFile = getDescription();
 		version = pdfFile.getVersion();
 		
+		Log.info("Loading configs...");
+		Configuration.start();
+		Log.info("loaded configs!");
 		Log.info(PLUGIN_NAME + " v" + version + " enabled");
 		
 		PluginManager pm = getServer().getPluginManager();
-		
 		pm.registerEvents(this.playerListener, this);
 	}
 	
