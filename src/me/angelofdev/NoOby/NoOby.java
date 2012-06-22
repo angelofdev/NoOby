@@ -19,6 +19,8 @@ public class NoOby extends JavaPlugin {
 		PluginDescriptionFile pdfFile = getDescription();
 		version = pdfFile.getVersion();
 		
+		initMetrics();
+		
 		Log.info("Loading configs...");
 		Configuration.start();
 		Log.info("loaded configs!");
@@ -35,6 +37,15 @@ public class NoOby extends JavaPlugin {
 	@Override
 	public String toString() {
 		return getPluginName();
+	}
+
+	private void initMetrics() {
+		try {
+		    MetricsLite metrics = new MetricsLite(instance);
+		    metrics.start();
+		} catch (IOException e) {
+		    // Failed to submit the stats :-(
+		}
 	}
 	
 	public NoObyBlockListener getListener() {
