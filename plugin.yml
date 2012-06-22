@@ -1,7 +1,7 @@
 name: NoOby
 main: me.angelofdev.NoOby.NoOby
-version: 0.5.0
+version: 1.0.2
+website: http://derpmc.com
 description: >
-             Breaks Obsidian like Glass but enables Glass & other blocks to drop.
-commands:
+             Makes Obsidian break like Glass but makes Glass & other unobtainable blocks to drop like normal blocks.
 author: AngelofDev
