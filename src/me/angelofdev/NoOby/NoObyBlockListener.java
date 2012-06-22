@@ -88,7 +88,7 @@ public class NoObyBlockListener implements Listener {
 		    			if (player.getInventory().getItemInHand().getType().equals(Material.AIR)) {
 		    				if (Configuration.config.getBoolean("Rpg.Glass hurts bare hands", true)) {
 		    					player.damage(1);
-		    					if (Configuration.config.getBoolean("Rpg.Reminder", true)) {
+		    					if (Configuration.config.getBoolean("Rpg.messages", true)) {
 		    						player.sendMessage(ChatColor.GOLD + "Are you mad? Don't break glass with your bare hands.");
 		    					}
 		    				}
@@ -115,7 +115,7 @@ public class NoObyBlockListener implements Listener {
 		    			if (player.getInventory().getItemInHand().getType().equals(Material.AIR)) {
 		    				if (Configuration.config.getBoolean("Rpg.Glass hurts bare hands", true)) {
 		    					player.damage(1);
-		    					if (Configuration.config.getBoolean("Rpg.Reminder", true)) {
+		    					if (Configuration.config.getBoolean("Rpg.messages", true)) {
 		    						player.sendMessage(ChatColor.GOLD + "Are you mad? Don't break glass with your bare hands.");
 		    					}
 		    				}
