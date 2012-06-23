@@ -20,14 +20,20 @@
 
 package me.angelofdev.NoOby;
 
+import java.io.IOException;
+
+import me.angelofdev.NoOby.config.Configuration;
+
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class NoOby extends JavaPlugin {
-	private final NoObyBlockListener playerListener = new NoObyBlockListener (this);
+	private NoObyBlockListener blockListener;
 	private static String version;
 	private static final String PLUGIN_NAME = "NoOby";
+	
+	public static NoOby instance;
 	
 	@Override
 	public void onDisable() {
@@ -39,15 +45,16 @@ public class NoOby extends JavaPlugin {
 		PluginDescriptionFile pdfFile = getDescription();
 		version = pdfFile.getVersion();
 		
+		initialise();
 		initMetrics();
 		
 		Log.info("Loading configs...");
 		Configuration.start();
 		Log.info("loaded configs!");
 		Log.info(PLUGIN_NAME + " v" + version + " enabled");
-		
 		PluginManager pm = getServer().getPluginManager();
-		pm.registerEvents(this.playerListener, this);
+		
+		pm.registerEvents(this.blockListener, this);
 	}
 	
 	public static String getPluginName() {
@@ -58,18 +65,19 @@ public class NoOby extends JavaPlugin {
 	public String toString() {
 		return getPluginName();
 	}
+	
+	private void initialise() {
+		blockListener = new NoObyBlockListener();
+		instance = this;
+		
+	}
 
 	private void initMetrics() {
 		try {
-		    MetricsLite metrics = new MetricsLite(instance);
+		    MetricsLite metrics = new MetricsLite(this);
 		    metrics.start();
 		} catch (IOException e) {
 		    // Failed to submit the stats :-(
 		}
-	}
-	
-	public NoObyBlockListener getListener() {
-		return playerListener;
-	}
-	
+	}	
 }
