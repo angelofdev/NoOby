@@ -9,3 +9,7 @@
 0.2.0 Updated to 1.2.5 R1.4, Enabled Obsidian breaking. Made obsidian vanish randomly.
 0.2.1 Added a custom message when obsidian vanishes.
 0.5.0 Updated to 1.2.5 R4, Added Gamemode check. Certain blocks need gold tools, breaking glass with hands causes half heart damage.
+1.0.0 Added Config, configurable settings for obsidian. Added Debug mode.
+1.0.1 Minor code cleanup.
+1.0.2 Added Metrics
+1.0.3 Fixed IllegalArgumentException and minor cleanup of code
