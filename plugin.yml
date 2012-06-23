@@ -1,7 +1,7 @@
 name: NoOby
 main: me.angelofdev.NoOby.NoOby
-version: 1.0.2
+version: 1.0.3
 website: http://derpmc.com
 description: >
-             Makes Obsidian break like Glass but makes Glass & other unobtainable blocks to drop like normal blocks.
+             Enable/Disable drops for unbreakable blocks eg.Glass/Glowstone. Enable/Disable Obsidian drops.
 author: AngelofDev
