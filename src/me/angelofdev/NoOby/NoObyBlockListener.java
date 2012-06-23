@@ -36,7 +36,7 @@ import org.bukkit.inventory.ItemStack;
 
 public class NoObyBlockListener implements Listener {
 
-	public NoObyBlockListener(NoOby paramNoOby) {
+	public NoObyBlockListener() {
 	}
 
 	public HashMap<String, Player> playerhas = new HashMap<String, Player>();
